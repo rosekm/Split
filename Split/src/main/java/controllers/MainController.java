@@ -3,6 +3,7 @@ package controllers;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
+import init.Main;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
@@ -10,7 +11,6 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import models.Main;
 import utils.DialogUtils;
 import utils.FXMLLoadUtils;
 import utils.UserManager;

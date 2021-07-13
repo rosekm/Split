@@ -1,4 +1,4 @@
-package models;
+package init;
 
 import java.util.Locale;
 
