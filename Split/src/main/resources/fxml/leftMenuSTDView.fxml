@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="164.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LeftMenuSTDController">
+   <children>
+      <ToggleButton fx:id="searchViewButton" mnemonicParsing="false" onAction="#loadSearchView" prefHeight="50.0" prefWidth="120.0" text="%SearchViewButton.name">
+         <VBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </VBox.margin>
+         <toggleGroup>
+            <ToggleGroup fx:id="toggleGroupSTD" />
+         </toggleGroup>
+      </ToggleButton>
+      <ToggleButton fx:id="addViewButton" mnemonicParsing="false" onAction="#loadAddView" prefHeight="50.0" prefWidth="120.0" text="%AddViewButton.name" toggleGroup="$toggleGroupSTD">
+         <VBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </VBox.margin>
+      </ToggleButton>
+      <Separator>
+         <VBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </VBox.margin>
+      </Separator>
+      <ToggleButton fx:id="salesmenViewButton" mnemonicParsing="false" onAction="#loadSalesmenView" prefHeight="50.0" prefWidth="120.0" text="%SalesmenViewButton.name" toggleGroup="$toggleGroupSTD">
+         <VBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </VBox.margin>
+      </ToggleButton>
+      <ToggleButton fx:id="branchesViewButton" mnemonicParsing="false" onAction="#loadBranchesView" prefHeight="50.0" prefWidth="120.0" text="%BranchesViewButton.name" toggleGroup="$toggleGroupSTD">
+         <VBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </VBox.margin>
+      </ToggleButton>
+   </children>
+</VBox>
