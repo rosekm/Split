@@ -5,7 +5,7 @@ Purpose of this application is to manage information about customers and their a
 
 To run, it requires an internet connection and set up external MySQL database, where information about Customers is stored. Proper DB creation code is stored in the file ' SplitDataBaseCreateSQL'. After DB creation, before first use, below SQL command needs to be executed. 
 
-_INSERT INTO users (name, surname, machineID, userType) VALUES(/*/,/*/,/*/,'ADMIN')
+_INSERT INTO users (name, surname, machineID, userType) VALUES(/name/,/surname/,/machineID/,'ADMIN')
 
 *'machineID' is machine name on which app is running.
 
