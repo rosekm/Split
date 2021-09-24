@@ -137,7 +137,7 @@ public class BIRMessageBuilderTest {
 		}
 
 	}
-	
+
 	@Test
 	public void shouldReturnCorrectCompleteLogInEnvelope() {
 		try {
@@ -150,7 +150,7 @@ public class BIRMessageBuilderTest {
 		}
 
 	}
-	
+
 	@Test
 	public void shouldReturnCorrectCompleteQueryEnvelope() {
 		try {
@@ -159,7 +159,7 @@ public class BIRMessageBuilderTest {
 			BIRMessageBuilder.setQueryParameters(testQueryParameters);
 			EasyMock.expect(testQueryParameters.getQueryParameters()).andReturn(testParameterMap);
 			EasyMock.replay(testQueryParameters);
-			
+
 			testMessage = BIRMessageBuilder.getSOAPMessage(ActionType.QUERY_SINGLE_COMPANY);
 			EasyMock.verify(testQueryParameters);
 			testMessage.writeTo(baos);
@@ -171,7 +171,7 @@ public class BIRMessageBuilderTest {
 		}
 
 	}
-	
+
 	@Test
 	public void shouldReturnCorrectCompleteLogOutEnvelope() {
 		try {
@@ -185,8 +185,8 @@ public class BIRMessageBuilderTest {
 		}
 
 	}
-	
-	private HashMap<String,String> getFilledParamMap(){
+
+	private HashMap<String, String> getFilledParamMap() {
 		testParameterMap = new HashMap<String, String>();
 		testParameterMap.put("Regon", null);
 		testParameterMap.put("Nip", "123-12-12-123");
@@ -202,5 +202,5 @@ public class BIRMessageBuilderTest {
 	public void tearDown() {
 		testMessage = null;
 	}
-	
+
 }
