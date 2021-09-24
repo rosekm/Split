@@ -7,12 +7,11 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-
 <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="161.0" prefWidth="374.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LanguageChangeController">
    <children>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Label text="%languageChangeView.label">
+            <Label text="%LanguageChangeView.label">
                <HBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </HBox.margin>
@@ -24,6 +23,6 @@
             </ComboBox>
          </children>
       </HBox>
-      <Button fx:id="saveButton" mnemonicParsing="false" onAction="#setLanguageToApp" text="%languageChangeView.button" />
+      <Button fx:id="saveButton" mnemonicParsing="false" onAction="#setLanguageToApp" text="%LanguageChangeView.button" />
    </children>
 </VBox>
